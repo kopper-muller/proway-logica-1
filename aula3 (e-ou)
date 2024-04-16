@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 10/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 nome: caracter
 preco: real
@@ -11,15 +11,15 @@ desconto: real
 total: real
 
 inicio
-// Seção de Comandos 
+// SeÃ§Ã£o de Comandos 
 
 escreva(" digite o nome do produto: ")
 leia (nome)
 escreva("digite a categoria do produto: ")
 leia(categoria)
-escreva("digite o preço do produto: ")
+escreva("digite o preÃ§o do produto: ")
 leia(preco)
-se ((categoria = "acessório") ou (categoria = "monitores") ou (categoria = "monitor")) entao
+se ((categoria = "acessÃ³rio") ou (categoria = "monitores") ou (categoria = "monitor")) entao
 total := preco *0.10
 desconto := preco*0.9
 fimse
