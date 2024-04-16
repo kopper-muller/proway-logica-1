@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 15/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 b: inteiro
 x, y, Z: real
@@ -10,7 +10,7 @@ inicio
 escreval("digite um valor para b(1, 2 ou 3): ")
 leia (b)
 se ((b<1) ou (b>3)) entao
-   escreval ("não está entre os valores solicitados")
+   escreval ("nÃ£o estÃ¡ entre os valores solicitados")
 fimse
 escreva("digite um valor para x: ")
 leia (x)
