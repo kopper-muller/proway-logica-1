@@ -1,8 +1,8 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 08/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 nome: caracter
 nota1bi: real
@@ -11,7 +11,7 @@ nota3bi: real
 nota4bi: real
 media: real
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 
 escreva ("digite seu nome: ")
 leia (nome)
@@ -24,5 +24,5 @@ leia (nota3bi)
 escreva ("digite sua nota no quarto bim.:")
 leia (nota4bi)
 media := (nota1bi + nota2bi + nota3bi + nota4bi)/4
-escreva ("sua média é: ", media)
+escreva ("sua mÃ©dia Ã©: ", media)
 fimalgoritmo
