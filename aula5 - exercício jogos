@@ -16,7 +16,7 @@ nomeJogo, plataforma: caracter
 quantiaPS4, quantiaPS5, quantiaXBOXone, quantiaXBOXseries, quantiaPC, quantiaNINTENDO: inteiro
 inicio
 // Seção de Comandos
-para indice de 0 ate 3 faca
+para indice de 0 ate 9 faca
    escreva ("diga o nome do jogo: ")
    leia(nomeJogo)
    escreva ("é PS4, PS5, PC, NINTENDO, XBOX ONE ou XBOX SERIES S/X?: ")
