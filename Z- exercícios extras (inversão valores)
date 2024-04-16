@@ -1,23 +1,23 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 15/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 x: inteiro
 y: inteiro
 auxiliar: inteiro
 inicio
-escreva("digite um número: ")
+escreva("digite um nÃºmero: ")
 leia (x)
-escreva ("digite outro número: ")
+escreva ("digite outro nÃºmero: ")
 leia (y)
-escreval ("numero1 = ", x, " número 2 = ", y)
+escreval ("numero1 = ", x, " nÃºmero 2 = ", y)
 escreval("invertendo seus valores fica: ")
 auxiliar <- y
 y <- x
 x <- auxiliar
-escreval ("número 1 = ", x, " número 2 = ", y)
+escreval ("nÃºmero 1 = ", x, " nÃºmero 2 = ", y)
 
 
 
