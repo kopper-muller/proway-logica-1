@@ -1,4 +1,4 @@
-algoritmo "exercício 2 enquanto"
+algoritmo "exercÃ­cio 2 enquanto"
 
 var
 nome: caracter
@@ -18,6 +18,6 @@ enquanto indice<5 faca
    escreva ("qual sua altura(metros): ")
    leia (altura)
    imc := peso/(altura*altura)
-   escreval ("seu imc é :", imc)
+   escreval ("seu imc Ã© :", imc)
 fimenquanto
 fimalgoritmo
