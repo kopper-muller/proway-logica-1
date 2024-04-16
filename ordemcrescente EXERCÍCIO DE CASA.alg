@@ -1,0 +1,100 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 15/04/2024
+// Seção de Declarações 
+var
+b: inteiro
+x, y, Z: real
+inicio
+escreval("digite um valor para b(1, 2 ou 3): ")
+leia (b)
+se ((b<1) ou (b>3)) entao
+   escreval ("não está entre os valores solicitados")
+fimse
+escreva("digite um valor para x: ")
+leia (x)
+escreva("digite um valor para y: ")
+leia (y)
+escreva("digite um valor para z: ")
+leia (z)
+
+se b=1 entao
+   se ((x>y) e (y>z)) entao
+      escreval (x,y,z)
+   senao
+      se ((y>x) e (x>z)) entao
+         escreval (y, x, z)
+      senao
+         se ((y>z) e (z>x)) entao
+            escreval (y, z, x)
+         senao
+            se ((x>z) e (z>y)) entao
+               escreval (x, z, y)
+            senao
+               se ((z>y) e (y>x)) entao
+                  escreval (z, y, x)
+               senao
+                  se ((z>x) e (x>y)) entao
+                     escreval (z, x, y)
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+
+se b=2 entao
+   se ((x<y) e (y<z)) entao
+      escreval (x,y,z)
+   senao
+      se ((y<x) e (x<z)) entao
+         escreval (y, x, z)
+      senao
+         se ((y<z) e (z<x)) entao
+            escreval (y, z, x)
+         senao
+            se ((x<z) e (z<y)) entao
+               escreval (x, z, y)
+            senao
+               se ((z<y) e (y<x)) entao
+                  escreval (z, y, x)
+               senao
+                  se ((z<x) e (x<y)) entao
+                     escreval (z, x, y)
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+
+se b=3 entao
+ se ((x>y) e (y>z)) entao
+      escreval (y, x, z)
+   senao
+      se ((y>x) e (x>z)) entao
+         escreval (x, y, z)
+      senao
+         se ((y>z) e (z>x)) entao
+            escreval (z, y, x)
+         senao
+            se ((x>z) e (z>y)) entao
+               escreval (z, x, y)
+            senao
+               se ((z>y) e (y>x)) entao
+                  escreval (y, z, x)
+               senao
+                  se ((z>x) e (x>y)) entao
+                     escreval (x, z, y)
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimalgoritmo
+

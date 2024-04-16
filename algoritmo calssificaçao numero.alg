@@ -1,0 +1,22 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 10/04/2024
+// Seção de Declarações 
+var
+numero: inteiro
+inicio
+// Seção de Comandos
+escreva (" digite um número: ")
+   leia (numero)
+
+se (numero>0) entao
+   escreval("número positivo")
+senao
+   se (numero<0)
+      escreval ("número negativo")
+   senao
+      escreval ("número 0")
+   fimse
+fimse
+fimalgoritmo

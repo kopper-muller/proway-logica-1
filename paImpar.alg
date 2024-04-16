@@ -1,0 +1,27 @@
+algoritmo "parImpar"
+// Função :
+// Autor :
+// Data : 09/04/2024
+// Seção de Declarações 
+var
+numero1: inteiro
+indice: inteiro
+indice2: inteiro
+parImpar: inteiro
+inicio
+// Seção de Comandos
+escreval("escreva um número: ")
+   leia (numero1)
+      escreval("tabuada do número ", numero1)
+para indice de 0 ate 13 faca
+   escreva(numero1, " x", indice, " =", indice*numero1)
+      indice2 := numero1*indice%2
+      se indice2=1 entao
+         escreval(" impar")
+      senao
+         escreval(" par")
+   fimse
+   fimpara
+   
+
+fimalgoritmo

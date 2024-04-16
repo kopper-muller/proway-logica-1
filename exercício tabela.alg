@@ -1,0 +1,20 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 09/04/2024
+// Seção de Declarações 
+var
+ indice: inteiro
+ indice2: inteiro
+inicio
+// Seção de Comandos
+ para indice de 0 ate 100 faca
+ escreval (" ")
+ escreval ("tabuada do", indice)
+ escreval (" ")
+ para indice2 de 0 ate 100 faca
+ escreval (indice, " x", indice2, " =", indice*indice2)
+ fimpara
+ fimpara
+fimalgoritmo
+

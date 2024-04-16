@@ -1,0 +1,33 @@
+algoritmo "exemplo 01 apresentar mensagem"
+// Função :
+// Autor :
+// Data : 08/04/2024
+// Seção de Declarações 
+var
+
+inicio
+ESCREVAl ("hello world")
+//sempre que quiser por um  paragrafo entre duas mensagens usar "escrevaL"
+escrevaL ("bem vindo")
+escreval ("soma: 2 + 2")
+//tudo entre aspas é texto, não comando.
+escreval (2 + 2)
+//números fora da aspas é um valor.
+escreval ("soma", 2+2)
+escreval ("multiplicação:", 2*2)
+escreval ("divisão:", 4/2)
+escreval (5 mod 2)
+//mod é igual %
+//mode serve para difenciar par de impar, expondo o resto da divisão de a por b em (a mod b)
+escreval ("bernardo", " ", "kopper", " ", "müller")
+escreval("     *")
+escreval("    ***")
+escreval("   *****")
+escreval("  *******")
+escreval(" *********")
+escreval("***********")
+escreval("    ***")
+escreval("    ***")
+
+// Seção de Comandos 
+fimalgoriTmo

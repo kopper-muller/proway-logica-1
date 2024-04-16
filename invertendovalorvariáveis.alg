@@ -1,0 +1,27 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 15/04/2024
+// Seção de Declarações 
+var
+x: inteiro
+y: inteiro
+auxiliar: inteiro
+inicio
+escreva("digite um número: ")
+leia (x)
+escreva ("digite outro número: ")
+leia (y)
+escreval ("numero1 = ", x, " número 2 = ", y)
+escreval("invertendo seus valores fica: ")
+auxiliar <- y
+y <- x
+x <- auxiliar
+escreval ("número 1 = ", x, " número 2 = ", y)
+
+
+
+
+
+fimalgoritmo
+

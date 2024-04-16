@@ -1,0 +1,23 @@
+algoritmo "exercício 2 enquanto"
+
+var
+nome: caracter
+peso, idade, indice: inteiro
+altura: real
+imc: real
+
+inicio
+enquanto indice<5 faca
+   indice := indice+1
+   escreva ("qual seu nome: ")
+   leia (nome)
+   escreva ("qual sua idade: ")
+   leia (idade)
+   escreva ("qual seu peso(kg): ")
+   leia (peso)
+   escreva ("qual sua altura(metros): ")
+   leia (altura)
+   imc := peso/(altura*altura)
+   escreval ("seu imc é :", imc)
+fimenquanto
+fimalgoritmo
