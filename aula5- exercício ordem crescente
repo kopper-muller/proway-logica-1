@@ -2,7 +2,7 @@ algoritmo "semnome"
 // Função :
 // Autor :
 // Data : 15/04/2024
-// Seção de Declarações 
+// Seção de Declarações
 var
 b: inteiro
 x, y, Z: real
@@ -37,12 +37,12 @@ se b=1 entao
                senao
                   se ((z>x) e (x>y)) entao
                      escreval (z, x, y)
-fimse
-fimse
-fimse
-fimse
-fimse
-fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
 fimse
 
 se b=2 entao
@@ -63,16 +63,16 @@ se b=2 entao
                senao
                   se ((z<x) e (x<y)) entao
                      escreval (z, x, y)
-fimse
-fimse
-fimse
-fimse
-fimse
-fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
 fimse
 
 se b=3 entao
- se ((x>y) e (y>z)) entao
+   se ((x>y) e (y>z)) entao
       escreval (y, x, z)
    senao
       se ((y>x) e (x>z)) entao
@@ -89,12 +89,12 @@ se b=3 entao
                senao
                   se ((z>x) e (x>y)) entao
                      escreval (x, z, y)
-fimse
-fimse
-fimse
-fimse
-fimse
-fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
 fimse
 fimalgoritmo
 
