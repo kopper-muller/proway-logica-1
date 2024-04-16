@@ -1,0 +1,17 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 09/04/2024
+// Seção de Declarações 
+var
+numero: inteiro
+inicio
+// Seção de Comandos 
+escreva("digite um número: ")
+leia(numero)
+se (numero=0) entao
+   escreval("você digitou o 0, ele é inválido")
+senao
+   escreval("você digitou o", numero)
+   fimse
+fimalgoritmo
