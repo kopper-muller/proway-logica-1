@@ -1,15 +1,15 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 15/04/2024
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 var
 nome: caracter
 indice: inteiro
 temperatura: real
 febre: logico
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 para indice de 0 ate 2 faca
    escreva("qual seu nome: ")
    leia (nome)
@@ -23,7 +23,7 @@ para indice de 0 ate 2 faca
       febre := falso
    fimse
    se febre=verdadeiro entao
-   escreval (" status: febríolo")
+   escreval (" status: febrÃ­olo")
    timer(2000)
    limpatela
    timer(0)
