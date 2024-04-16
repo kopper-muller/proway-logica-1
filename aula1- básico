@@ -1,8 +1,8 @@
 algoritmo "exemplo 01 apresentar mensagem"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 08/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 
 inicio
@@ -10,16 +10,16 @@ ESCREVAl ("hello world")
 //sempre que quiser por um  paragrafo entre duas mensagens usar "escrevaL"
 escrevaL ("bem vindo")
 escreval ("soma: 2 + 2")
-//tudo entre aspas é texto, não comando.
+//tudo entre aspas Ã© texto, nÃ£o comando.
 escreval (2 + 2)
-//números fora da aspas é um valor.
+//nÃºmeros fora da aspas Ã© um valor.
 escreval ("soma", 2+2)
-escreval ("multiplicação:", 2*2)
-escreval ("divisão:", 4/2)
+escreval ("multiplicaÃ§Ã£o:", 2*2)
+escreval ("divisÃ£o:", 4/2)
 escreval (5 mod 2)
-//mod é igual %
-//mode serve para difenciar par de impar, expondo o resto da divisão de a por b em (a mod b)
-escreval ("bernardo", " ", "kopper", " ", "müller")
+//mod Ã© igual %
+//mode serve para difenciar par de impar, expondo o resto da divisÃ£o de a por b em (a mod b)
+escreval ("bernardo", " ", "kopper", " ", "mÃ¼ller")
 escreval("     *")
 escreval("    ***")
 escreval("   *****")
@@ -29,5 +29,5 @@ escreval("***********")
 escreval("    ***")
 escreval("    ***")
 
-// Seção de Comandos 
+// SeÃ§Ã£o de Comandos 
 fimalgoriTmo
