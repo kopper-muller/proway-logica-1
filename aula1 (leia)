@@ -1,8 +1,8 @@
-algoritmo "exemplo 04 solicitar informmação"
-// Função :
+algoritmo "exemplo 04 solicitar informmaÃ§Ã£o"
+// FunÃ§Ã£o :
 // Autor :
 // Data : 08/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 nome: caracter
 quantidade: inteiro
@@ -12,14 +12,14 @@ valorPago: real
 troco: real
 outraQuantia: real
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 escreva ("digite o nome do produto: ")
 leia (nome)
 
 escreva ("digite a quantidade desejada:")
 leia (quantidade)
 
-escreva ("digite o preço:")
+escreva ("digite o preÃ§o:")
 leia (precoUnitario)
 
 valorTotal := ( quantidade*precoUnitario)
@@ -33,11 +33,11 @@ se valorPago = valorTotal entao
 escreva ("Obrigadocpela compra!")
 fimse
 se (valorPago) < valorTotal entao
-escreva ("O valor não é suficiente, tente outra quantia:")
+escreva ("O valor nÃ£o Ã© suficiente, tente outra quantia:")
 fimse
 leia (valorPago)
 se valorPago > valorTotal entao
-escreva ("o valor é superior ao preço unitario, este é seu troco: ", troco)
+escreva ("o valor Ã© superior ao preÃ§o unitario, este Ã© seu troco: ", troco)
 fimse
 
 
