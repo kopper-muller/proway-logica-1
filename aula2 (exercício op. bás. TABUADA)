@@ -1,13 +1,13 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 09/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
  indice: inteiro
  indice2: inteiro
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
  para indice de 0 ate 100 faca
  escreval (" ")
  escreval ("tabuada do", indice)
