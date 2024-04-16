@@ -1,4 +1,4 @@
-algoritmo "exercício3 enquanto"
+algoritmo "exercÃ­cio3 enquanto"
 
 var
 media, somanota, nota: real
@@ -21,7 +21,7 @@ enquanto indice1<5 faca
       media := somaNota/4
 
       se indice2=4 entao
-         escreval("sua média é: ", media)
+         escreval("sua mÃ©dia Ã©: ", media)
       fimse
    fimenquanto
    se (indice2=4) entao
