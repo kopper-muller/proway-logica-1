@@ -1,0 +1,55 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 16/04/2024
+// Seção de Declarações Ex. 3: Solicitar o nome do jogo e a plataforma de 10 jogos
+
+//Calcular e apresentar a quantidade de jogos de PS4
+//Calcular e apresentar a quantidade de jogos de PS5
+//Calcular e apresentar a quantidade de jogos de Nintendo Switch
+//Calcular e apresentar a quantidade de jogos de PC
+//Calcular e apresentar a quantidade de jogos de Xbox One
+//Calcular e apresentar a quantidade de jogos de Xbox Series S/X
+var
+quantidadeJogos, indice: inteiro
+nomeJogo, plataforma: caracter
+quantiaPS4, quantiaPS5, quantiaXBOXone, quantiaXBOXseries, quantiaPC, quantiaNINTENDO: inteiro
+inicio
+// Seção de Comandos
+para indice de 0 ate 3 faca
+   escreva ("diga o nome do jogo: ")
+   leia(nomeJogo)
+   escreva ("é PS4, PS5, PC, NINTENDO, XBOX ONE ou XBOX SERIES S/X?: ")
+   leia(Plataforma)
+   se (plataforma="PS4") entao
+      quantiaPS4 := quantiaPS4+1
+   senao
+      se(plataforma = "PS5") entao
+         quantiaPS5 := quantiaPS5+1
+      senao
+         se(plataforma = "NINTENDO SWITCH") entao
+            quantiaNINTENDO:= quantiaNINTENDO+1
+         senao
+            se (plataforma = "PC") entao
+               quantiaPC := quantiaPC+1
+            senao
+               se (plataforma = "XBOX ONE") entao
+                  quantiaXBOXone := quantiaXBOXone+1
+               senao
+                  se (plataforma = "XBOX SERIES S/X") entao
+                     quantiaXBOXseries := quantiaXBOXseries+1
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+fimpara
+
+escreval("quantia de jogos ps4: ", quantiaPS4)
+escreval("quantia de jogos ps5: ", quantiaPS5)
+escreval("quantia de jogos XBOX ONE: ", quantiaXBOXone)
+escreval("quantia de jogos XBOX SERIES S/X: ", quantiaXBOXseries)
+escreval("quantia de jogos Nintendo: ", quantiaNintendo)
+escreval("quantia de jogos PC: ", quantiaPC)
+fimalgoritmo
