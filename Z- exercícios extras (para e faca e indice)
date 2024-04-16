@@ -1,15 +1,15 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 09/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
  numero1: real
  indice: inteiro
  indice2: inteiro
 inicio
-// Seção de Comandos 
-escreva ("diga-me uim número e eu lhe direi sua tabuada: ")
+// SeÃ§Ã£o de Comandos 
+escreva ("diga-me uim nÃºmero e eu lhe direi sua tabuada: ")
 leia (numero1)
 
 para indice de 0 ate 10 faca
