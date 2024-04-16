@@ -1,19 +1,19 @@
-algoritmo "exemplo 02 variáveis"
-// Função :
+algoritmo "exemplo 02 variÃ¡veis"
+// FunÃ§Ã£o :
 // Autor :
 // Data : 08/04/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
-nomeProduto: caracter // caracter é utilizado para armazenar texto
-qtdProduto: inteiro // armazenar informação de valor
-valorProduto: real // real é usado pra armazenar numero inteiro e casas decimais
+nomeProduto: caracter // caracter Ã© utilizado para armazenar texto
+qtdProduto: inteiro // armazenar informaÃ§Ã£o de valor
+valorProduto: real // real Ã© usado pra armazenar numero inteiro e casas decimais
 valorTotal: real// esse vai ser o valor total da compra
-vendaProduto: logico// isso é verdadeiro ou falso
+vendaProduto: logico// isso Ã© verdadeiro ou falso
 
 
 
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 nomeProduto := "eBook"
 qtdProduto := 20
 valorProduto := 10.99
