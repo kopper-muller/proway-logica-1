@@ -4,43 +4,64 @@ algoritmo "semnome"
 // Data : 16/04/2024
 // Seção de Declarações
 var
-nota: vetor [0..3] de real
+nota1, nota2, nota3: vetor [0..4] de real
 nomeAluno: vetor [0..4] de caracter
 media, somaNota, frequencia: vetor [0..4] de real
-indice1, indice2: inteiro
+indice1, indice2, aulas, presenca: inteiro
+enter: caracter
 
 inicio
 para indice1 de 0 ate 4 faca
 
-   indice1 := indice1+1
 
    escreva ("qual seu nome: ")
    leia (nomeAluno[indice1])
 
-   para indice2 de 0 ate 2 faca
-
-      indice2 := indice2+1
-
-      escreva ("digite sua nota", indice2, " : ")
-      leia (nota[indice2])
-
-      somaNota[indice1] := somaNota[indice1] + nota[indice2]
-
-   fimpara
+   escreva("digite sua nota 1: ")
+   leia (nota1[indice1])
+   enquanto (nota1[indice1]<0) ou (nota1[indice1]>10) faca
+      escreva("digite uma nota válida (de 0 à 10): ")
+      leia (nota1[indice1])
+   fimenquanto
 
 
-   media[indice] := somaNota[indice1]/3
+   escreva("digite sua nota 2: ")
+   leia (nota2[indice1])
+   enquanto (nota2[indice1]<0) ou (nota2[indice1]>10) faca
+      escreva("digite uma nota válida (de 0 à 10): ")
+      leia (nota2[indice1])
+   fimenquanto
 
-   escreva ("qual seu percentual de presença: ")
-   leia(frequencia)
 
-   se ((frequencia<75) ou (media<7)) entao
-      escreval ("você está reprovado")
+   escreva("digite sua nota 3: ")
+   leia (nota3[indice1])
+   enquanto (nota3[indice1]<0) ou (nota3[indice1]>10) faca
+      escreva("digite uma nota válida (de 0 à 10): ")
+      leia (nota3[indice1])
+   fimenquanto
+
+
+   somaNota[indice1] := ( nota1[indice1] + nota2[indice1] + nota3[indice1])
+
+   media[indice1] := somaNota[indice1]/3
+
+   escreva ("quantas aulas tiveram: ")
+   leia (aulas)
+   escreva ("quantas aulas você foi: ")
+   leia(presenca)
+
+   frequencia[indice1]:=(presenca/aulas)*100
+
+   se ((frequencia[indice1]<75) ou (media[indice1]<7)) entao
+      escreval ("você está reprovado com média ", media[indice1], " e presença de ", frequencia[indice1], "%")
    senao
-      se ((frequencia>=75) e (media>7)) entao
-         escreval ("você está aprovado")
+      se ((frequencia[indice1]>=75) e (media[indice1]>7)) entao
+         escreval ("você está aprovado com média ", media[indice1], " e presença de ", frequencia[indice1], "%")
       fimse
    fimse
+   escreva("para continuar digite enter: ")
+   leia(enter)
+   limpatela
 fimpara
 
 fimalgoritmo
