@@ -1,0 +1,98 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 17/04/2024
+// Seção de Declarações
+var
+apelidos: vetor[0..2] de caracter
+racas: vetor[0..2] de caracter
+peso: vetor[0..2] de real
+vacinado: vetor[0..2] de logico
+porte: vetor[0..2] de caracter
+i, qtdVacinado, qtdNaoVacinado: inteiro
+opcao: caracter //quer ser vacinado ou não
+
+inicio
+para i de 0 ate 2 faca
+
+   escreva ("digite o apelido deste cão: ")
+   leia (apelidos[i])
+
+   limpatela
+
+   enquanto ((compr(apelidos[i])<1) ou (compr(apelidos[i])>10)) faca
+      escreva ("digite um nome com no mínimo 1 e máximo 10 caracteres: ")
+      leia(apelidos[i])
+   fimenquanto
+   limpatela
+
+   escreva ("digite a raça deste cão: ")
+   leia (racas[i])
+
+   limpatela
+
+   enquanto (((racas[i]) <> "caramelo") e (racas[i]) <> "spitz")) e (racas[i] <> "labrador")) faca
+      escreval ("raça não cadastrada")
+      escreval ("raças cadastradas: caramelo/spitz/labrador ")
+      escreva ("escreva a raça")
+      leia(racas[i])
+   fimenquanto
+
+   limpatela
+
+   escreva("este cão é vacinado? [sim/não]: ")
+   leia(opcao)
+   enquanto (((opcao[i])<>"sim") e (opcao[i])<>"nao")) e (opcao<>"não")) faca
+      escreva("digite uma opção valida: )
+      leia(opcao)
+   fimenquanto
+   se (opcao="sim") entao
+      vacinado[i] := verdadeiro
+   senao
+      vacinado[i] := falso
+   fimse
+   se vacinado[i]=verdadeiro entao
+      qtdVacinado:=qtdVacinado+1
+   senao
+      qtdNaoVacinado:=qtdNaoVacinado+1
+   fimse
+
+
+   escreva ("digite o peso deste cão(kg): ")
+   leia (peso[i])
+
+   limpatela
+
+   enquanto (((peso[i])<2) ou (peso[i])>130)) faca
+      escreval ("peso não aceito")
+      escreva ("escreva um peso entre 2 e 130 quilos: ")
+      leia(peso[i])
+   fimenquanto
+
+   se ((peso[i]>2) e (peso[i]<15))entao
+      porte[i] := "pequeno"
+   senao
+      se ((peso[i]>=15) e (peso[i]<25)) entao
+         porte[i] :=  "médio"
+      senao
+         se ((peso[i]>=25) e (peso[i]<45)) entao
+            porte[i]:= "grande"
+         senao
+            se (peso[i]>=45) entao
+               porte[i] := "gigante"
+            fimse
+         fimse
+      fimse
+
+
+   fimpara
+
+
+escreval ("nome: ", apelido[0])
+escreval ("raca: ", raca[0])
+escreval ("vacinado: ", vacinado[0])
+escreval ("peso: ", peso[0])
+escreval ("porte: ", porte[0])
+escreval ("quantidade vacinada: ", qtdVacinado
+escreval ("quantidade não vacinada: ", qtdNaoVacinado
+fimalgoritmo
