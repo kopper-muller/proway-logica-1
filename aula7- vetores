@@ -1,0 +1,24 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 17/04/2024
+// Seção de Declarações
+var
+numeros: vetor [0..4] de inteiro
+maiorNumero: inteiro
+soma: inteiro
+indice: inteiro
+inicio
+// Seção de Comandos
+para indice de 0 ate 4 faca
+   escreva ("digite um número: ")
+   leia (numeros[indice])
+   soma:= soma+numeros[indice]
+   se numeros[indice]>maiorNumero entao
+   maiorNumero:= numeros[indice]
+   fimse
+   limpatela
+fimpara
+ escreval("o maior número é: ", maiorNumero)
+ escreval("a soma é: ", soma)
+fimalgoritmo
