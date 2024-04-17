@@ -1,0 +1,43 @@
+algoritmo "aula 06 exercício 1"
+// Função : solicitar o nome de 5 itens e sua quantidade no estoque
+// Autor :
+// Data : 16/04/2024
+// Seção de Declarações
+var
+item: vetor [0..5] de caracter
+quantidade: vetor [0..5] de inteiro
+indice: inteiro
+resposta: caracter
+inicio
+para indice de 0 ate 4 faca
+
+   indice := indice+1
+
+   escreva("digite o nome do produto: ")
+   leia (item[indice])
+   limpatela
+
+   escreva("qual a quantia disponível no estoque: ")
+   leia (quantidade[indice])
+   limpatela
+
+   escreval ("[a quantia de ", item[indice], " disponível é: ", quantidade[indice], "]")
+
+   escreval("")
+   escreval("")
+   escreval("")
+   escreval("")
+   escreval("")
+
+   escreva ("aperte enter se deseja continuar: ")
+   leia(resposta)
+   limpatela
+   
+fimpara
+
+
+escreval (item[0], " : ", quantidade[0])
+escreval (item[1], " : ", quantidade[1])
+escreval (item[2], " : ", quantidade[2])
+escreval (item[3], " : ", quantidade[3])
+escreval (item[4], " : ", quantidade[4])
