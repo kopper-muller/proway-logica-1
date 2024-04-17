@@ -1,0 +1,46 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 16/04/2024
+// Seção de Declarações
+var
+nota: vetor [0..3] de real
+nomeAluno: vetor [0..4] de caracter
+media, somaNota, frequencia: vetor [0..4] de real
+indice1, indice2: inteiro
+
+inicio
+para indice1 de 0 ate 4 faca
+
+   indice1 := indice1+1
+
+   escreva ("qual seu nome: ")
+   leia (nomeAluno[indice1])
+
+   para indice2 de 0 ate 2 faca
+
+      indice2 := indice2+1
+
+      escreva ("digite sua nota", indice2, " : ")
+      leia (nota[indice2])
+
+      somaNota[indice1] := somaNota[indice1] + nota[indice2]
+
+   fimpara
+
+
+   media[indice] := somaNota[indice1]/3
+
+   escreva ("qual seu percentual de presença: ")
+   leia(frequencia)
+
+   se ((frequencia<75) ou (media<7)) entao
+      escreval ("você está reprovado")
+   senao
+      se ((frequencia>=75) e (media>7)) entao
+         escreval ("você está aprovado")
+      fimse
+   fimse
+fimpara
+
+fimalgoritmo
