@@ -1,0 +1,63 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 17/04/2024
+// Seção de Declarações
+var
+idade, decada: vetor[0..2] de inteiro
+nome: vetor [0..2] de caracter
+i: inteiro
+inicio
+// Seção de Comandos
+para i de 0 ate 2 faca
+   escreva("qual seu nome: ")
+   leia (nome[i])
+   escreva("qual sua idade: ")
+   leia (idade[i])
+   se (idade[i]<=4) entao
+      decada[i] := 2020
+   senao
+      se (idade[i]>4) e (idade[i]<=14) entao
+         decada:= 2010
+      senao
+         se ((idade[i]>14) e (idade[i]<=24))entao
+            decada[i]:= 2000
+         senao
+            se ((idade[i]>24) e (idade[i]<=34)) entao
+               decada[i]:= 90
+            senao
+               se ((idade[i]>34) e(idade[i]<=44)) entao
+                  decada[i]:= 80
+               senao
+                  se ((idade[i]>44) e (idade[i]<=54)) entao
+                     decada[i]:= 70
+                  senao
+                     se ((idade[i]>54) e(idade[i]<=64)) entao
+                        decada[i]:= 60
+                     senao
+                        se ((idade[i]>64) e (idade[i]<=74)) entao
+                           decada[i]:= 50
+                        senao
+                           se ((idade[i]>74) e (idade[i]<=84))  entao
+                              decada[i]:= 40
+                           fimse
+                        fimse
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+   limpatela
+
+   escreval(nome[i],", sua década é: ", decada[i])
+   
+   timer (2000)
+   limpatela
+   timer (0)
+fimpara
+
+
+
+            fimalgoritmo
