@@ -31,7 +31,7 @@ para i de 0 ate 2 faca
 
    limpatela
 
-   enquanto (((racas[i]) <> "caramelo") e (racas[i]) <> "spitz")) e (racas[i] <> "labrador")) faca
+   enquanto ((racas[i] <> "caramelo") e (racas[i] <> "spitz")) e (racas[i] <> "labrador") faca
       escreval ("raça não cadastrada")
       escreval ("raças cadastradas: caramelo/spitz/labrador ")
       escreva ("escreva a raça")
@@ -42,8 +42,8 @@ para i de 0 ate 2 faca
 
    escreva("este cão é vacinado? [sim/não]: ")
    leia(opcao)
-   enquanto (((opcao[i])<>"sim") e (opcao[i])<>"nao")) e (opcao<>"não")) faca
-      escreva("digite uma opção valida: )
+   enquanto ((opcao<>"sim") e (opcao<>"não") e (opcao<>"nao")) faca
+      escreva("digite uma opção valida: ")
       leia(opcao)
    fimenquanto
    se (opcao="sim") entao
@@ -63,7 +63,7 @@ para i de 0 ate 2 faca
 
    limpatela
 
-   enquanto (((peso[i])<2) ou (peso[i])>130)) faca
+   enquanto (peso[i]<2) ou (peso[i]>130) faca
       escreval ("peso não aceito")
       escreva ("escreva um peso entre 2 e 130 quilos: ")
       leia(peso[i])
@@ -83,16 +83,30 @@ para i de 0 ate 2 faca
             fimse
          fimse
       fimse
+   fimse
+
+fimpara
 
 
-   fimpara
-
-
-escreval ("nome: ", apelido[0])
-escreval ("raca: ", raca[0])
+escreval ("nome: ", apelidos[0])
+escreval ("raca: ", racas[0])
 escreval ("vacinado: ", vacinado[0])
 escreval ("peso: ", peso[0])
 escreval ("porte: ", porte[0])
-escreval ("quantidade vacinada: ", qtdVacinado
-escreval ("quantidade não vacinada: ", qtdNaoVacinado
+
+escreval ("nome: ", apelidos[1])
+escreval ("raca: ", racas[1])
+escreval ("vacinado: ", vacinado[1])
+escreval ("peso: ", peso[1])
+escreval ("porte: ", porte[1])
+
+escreval ("nome: ", apelidos[2])
+escreval ("raca: ", racas[2])
+escreval ("vacinado: ", vacinado[2])
+escreval ("peso: ", peso[2])
+escreval ("porte: ", porte[2])
+
+
+escreval ("quantidade vacinada: ", qtdVacinado)
+escreval ("quantidade não vacinada: ", qtdNaoVacinado)
 fimalgoritmo
