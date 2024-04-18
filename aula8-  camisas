@@ -1,0 +1,55 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/04/2024
+// Seção de Declarações
+var
+tamanho: vetor [0..20] de caracter
+quantidadePP, quantidadeP, quantidadeM, quantidadeG, quantidadeGG, quantidadeXG, quantidadeXXG: inteiro
+i: inteiro
+inicio
+para i de 0 ate 5 faca
+   escreval ("tamanhos disponíveis: PP, P, M, G, GG, XG, XXG")
+   escreva ("escolha o tamanho da camisa: ")
+   leia(tamanho[i])
+
+   se tamanho [i] = "PP" entao
+      quantidadePP := quantidadePP+1
+   senao
+      se tamanho [i] = "P" entao
+         quantidadeP := quantidadeP+1
+      senao
+         se tamanho [i] = "M" entao
+            quantidadeM := quantidadeM+1
+         senao
+            se tamanho [i] = "G" entao
+               quantidadeG := quantidadeG+1
+            senao
+               se tamanho [i] = "GG" entao
+                  quantidadeGG := quantidadePP+1
+               senao
+                  se tamanho [i] = "XG" entao
+                     quantidadeXG := quantidadeXG+1
+                  senao
+                     se tamanho [i] = "XGG" entao
+                        quantidadeXXG := quantidadeXXG+1
+                     senao
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+ limpatela
+fimpara
+
+
+escreval ("quantidade PP : ", quantidadePP)
+escreval ("quantidade P : ", quantidadeP)
+escreval ("quantidade M : ", quantidadeM)
+escreval ("quantidade G : ", quantidadeG)
+escreval ("quantidade GG : ", quantidadeGG)
+escreval ("quantidade XG : ", quantidadeXG)
+escreval ("quantidade XXG : ", quantidadeXXG)
+fimalgoritmo
