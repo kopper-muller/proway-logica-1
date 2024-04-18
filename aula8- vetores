@@ -1,0 +1,47 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/04/2024
+// Seção de Declarações
+var
+numeroPar, numeroImpar, numeroUsuario, numero, resto: vetor [0..5] de inteiro
+i: inteiro
+inicio
+para i de 0 ate 4 faca
+   escreva ("digite um numero inteiro: ")
+   leia (numero[i])
+
+   resto[i]:= numero[i]%2
+   numeroUsuario[i]:= numero[i]
+
+   se (resto[i]=0) entao
+      numeroPar[i]:=numero[i]
+   senao
+      se (resto[i]<>0) entao
+         numeroImpar[i]:=numero[i]
+      fimse
+   fimse
+fimpara
+escreval("numeros pares:")
+para i de 0 ate 4 faca
+   escreva (numeroPar[i],", ")
+fimpara
+escreval (". ")
+
+escreval("numeros ímpares:")
+
+para i de 0 ate 4 faca
+   escreva (numeroImpar[i],", ")
+
+fimpara
+
+escreval (". ")
+
+escreval("numeros: ")
+para i de 0 ate 4 faca
+   escreva (numeroUsuario[i],", ")
+
+fimpara
+
+
+fimalgoritmo
