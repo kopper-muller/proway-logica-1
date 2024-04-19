@@ -1,0 +1,67 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 19/04/2024
+// Seção de Declarações
+var
+
+menu: inteiro
+numero1, numero2, operacao: real
+
+procedimento operacoes()
+inicio
+se menu=1 entao
+   operacao := numero1+numero2
+   escreval ("a soma é: ", operacao)
+senao
+   se menu=2 entao
+      operacao := numero1-numero2
+      escreval ("a subtrção é: ", operacao)
+   senao
+      se menu=3 entao
+         operacao := numero1*numero2
+         escreval ("a multiplicação é: ", operacao)
+      senao
+         se menu=4 entao
+            operacao := numero1/numero2
+            escreval ("a divisão é: ", operacao)
+         fimse
+      fimse
+   fimse
+fimse
+fimprocedimento
+
+
+inicio
+enquanto menu<>5 faca
+
+   escreva ("digite o primerio numero: ")
+   leia(numero1)
+
+   escreva ("digite o segundo numero: ")
+   leia(numero2)
+
+   limpatela
+
+   escreval (" ___________________ ")
+   escreval ("|       menu        |")
+   escreval ("|___________________|")
+   escreval ("|    1. somar       |")
+   escreval ("|    2. subtrair    |")
+   escreval ("|    3. multiplicar |")
+   escreval ("|    4. dividir     |")
+   escreval ("|    5. sair        |")
+   escreval ("'''''''''''''''''''''")
+
+   escreva ("escolha o menu: ")
+   leia(menu)
+
+   timer(2000)
+
+   operacoes()
+
+   limpatela
+   
+   timer(0)
+
+   fimenquanto
