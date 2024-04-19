@@ -6,25 +6,50 @@ algoritmo "semnome"
 var
 
 menu: inteiro
+
 numero1, numero2, operacao: real
+
+procedimento soma()
+inicio
+operacao:=numero1+numero2
+escreval ("a soma é: ", operacao)
+fimprocedimento
+
+
+procedimento subtracao()
+inicio
+operacao:=numero1-numero2
+escreval ("a subtrção é: ", operacao)
+fimprocedimento
+
+
+procedimento multiplicacao()
+inicio
+operacao:=numero1*numero2
+escreval ("a multiplicação é: ", operacao)
+fimprocedimento
+
+procedimento divisao()
+inicio
+operacao:= numero1/numero2
+operacao := numero1/numero2
+escreval ("a divisão é: ", operacao)
+fimprocedimento
+
 
 procedimento operacoes()
 inicio
 se menu=1 entao
-   operacao := numero1+numero2
-   escreval ("a soma é: ", operacao)
+   soma()
 senao
    se menu=2 entao
-      operacao := numero1-numero2
-      escreval ("a subtrção é: ", operacao)
+      subtracao()
    senao
       se menu=3 entao
-         operacao := numero1*numero2
-         escreval ("a multiplicação é: ", operacao)
+         multiplicacao()
       senao
          se menu=4 entao
-            operacao := numero1/numero2
-            escreval ("a divisão é: ", operacao)
+            divisao()
          fimse
       fimse
    fimse
@@ -51,17 +76,14 @@ enquanto menu<>5 faca
    escreval ("|    3. multiplicar |")
    escreval ("|    4. dividir     |")
    escreval ("|    5. sair        |")
-   escreval ("'''''''''''''''''''''")
+   escreval ("|___________________|")
 
-   escreva ("escolha o menu: ")
+   escreva "escolha o menu: ")
    leia(menu)
 
-   timer(2000)
-
    operacoes()
-
+   escreval(" ")
+   timer(2000)
    limpatela
-   
    timer(0)
-
-   fimenquanto
+fimenquanto
