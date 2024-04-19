@@ -1,0 +1,54 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 19/04/2024
+// Seção de Declarações
+var
+nome: vetor[0..2] de caracter
+idade: vetor[0..2] de inteiro
+
+procedimento solicitarInfo()
+
+var:
+i: inteiro
+
+inicio
+para i de 0 ate 2 faca
+idade(i)
+nome(i)
+fimpara
+fimprocedimento
+
+procedimento idade(i: inteiro)
+inicio
+escreva("digite sua idade: ")
+leia(idade[i])
+enquanto ((idade[i]<0) ou (idade[i]>130)) faca
+   escreval ("Idade deve ser entre 0 e 130 anos")
+   escreva ("digite sua idade: ")
+   leia (idade[i])
+fimenquanto
+fimprocedimento
+
+procedimento nome(i: inteiro)
+inicio
+escreva ("digite seu nome: ")
+leia(nome[i])
+enquanto ((compr(nome[i])<3) ou (compr(nome[i])>20)) faca
+   escreval("o nome deve conter entre 3 e 20 caracteres")
+   escreval("digite seu nome: ")
+   leia(nome[i])
+fimenquanto
+fimprocedimento
+
+
+
+inicio
+
+solicitarInfo()
+
+
+
+
+// Seção de Comandos
+fimalgoritmo
