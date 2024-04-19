@@ -1,0 +1,58 @@
+// Data : 19/04/2024
+// Seção de Declarações
+var
+produtos: vetor [0..4] de caracter
+quantia: vetor [0..4] de real
+precoUnitario,valor: vetor [0..4] de real
+
+procedimento informacoes()
+var
+i: inteiro
+inicio
+para i de 0 ate 2 faca
+   escreval("digite o produto desejado: ")
+   leia (produtos[i])
+   escreval("digite a quantia desejada: ")
+   leia(quantia[i])
+   escreval("digite o valor unitario: ")
+   leia(precoUnitario[i])
+   limpatela
+fimpara
+fimprocedimento
+
+procedimento apresentarCupom
+var
+i: inteiro
+total, totalParcial: real
+inicio
+limpatela
+para i de 0 ate 2 faca
+   totalParcial:= quantia[i]*precoUnitario[i]
+   total := total+totalParcial
+   escreval(produtos[i], " QTD: ", quantia[i]," PREÇO UNITÁRIO: ", precoUnitario[i]," => ", totalParcial)
+fimpara
+escreval
+escreval ("TOTAL: ", total)
+fimprocedimento
+
+procedimento apresentarMenorPreco()
+var
+nomeMenorPreco: caracter
+menorPreco: real
+i: inteiro
+inicio
+menorPreco:=999999
+para i de 0 ate 2 faca
+   se (precoUnitario[i]<menorPreco) entao
+      menorPreco := precoUnitario[i]
+      nomeMenorPreco := produtos[i]
+   fimse
+fimpara
+escreval ("O produto ", produtos[i], " possui o menor preço sendo", menorPreco)
+fimprocedimento
+
+inicio
+Informacoes()
+apresentarCupom()
+apresentarMenorPreco()
+fimalgoritmo
