@@ -1,0 +1,130 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 19/04/2024
+// Seção de Declarações
+var
+numero: vetor[0..9] de inteiro
+
+
+
+procedimento pedirNumeros()
+var
+i: inteiro
+
+inicio
+para i de 0 ate 3 faca
+   escreva ("digite o numero ", i+1, ": ")
+   leia (numero[i])
+fimpara
+limpatela
+fimprocedimento
+
+procedimento somarNumeros()
+var
+i: inteiro
+somaNumero: inteiro
+media: real
+inicio
+para i de 0 ate 9 faca
+   somaNumero := somaNumero+numero[i]
+   escreva (numero[i], ", ")
+fimpara
+escreval (" ")
+escreval ("soma dos números é: ", somaNumero)
+media:= somaNumero/10
+escreval ("a média é: ", media)
+fimprocedimento
+
+
+procedimento acharMaiorNumero()
+var
+maiorNumero: inteiro
+i: inteiro
+inicio
+para i de 0 ate 9 faca
+   se maiorNumero<numero[i] entao
+      maiorNumero:=numero[i]
+   fimse
+fimpara
+escreval ("o maior número é: ", maiorNumero)
+fimprocedimento
+
+
+procedimento acharMenorNumero()
+var
+i:inteiro
+menorNumero:inteiro
+inicio
+menorNumero:= 99999999
+para i de 0 ate 9 faca
+
+   se menorNumero>numero[i] entao
+      menorNumero:=numero[i]
+   fimse
+fimpara
+
+escreval("o menor número é: ", menorNumero)
+fimprocedimento
+
+
+procedimento somarPares()
+var
+i, somaPares: inteiro
+inicio
+para i de 0 ate 9 faca
+   se numero[i]%2=0 entao
+      somaPares := somaPares+numero[i]
+   fimse
+fimpara
+
+escreval("a soma dos números pares é ", somaPares)
+fimprocedimento
+
+
+
+procedimento apresentarImpares()
+var
+i, Impares: inteiro
+inicio
+escreva("os números ímpares são: ")
+para i de 0 ate 9 faca
+   se numero[i]%2<>0 entao
+      escreva(numero[i], ", ")
+   fimse
+fimpara
+escreval (" ")
+fimprocedimento
+
+
+procedimento apresentarQuantidadeNumerosNegativos()
+var
+i, quantidadeNegativos: inteiro
+inicio
+para i de 0 ate 9 faca
+   se numero[i]<0 entao
+      quantidadeNegativos:= quantidadeNegativos+1
+   fimse
+fimpara
+
+escreval("a quantidade de números negativos é: ", quantidadeNegativos)
+fimprocedimento
+
+inicio
+
+pedirNumeros()
+
+somarNumeros()
+
+acharMaiorNumero()
+
+acharMenorNumero()
+
+somarPares()
+
+apresentarImpares()
+
+apresentarQuantidadeNumerosNegativos()
+
+
+fimalgoritmo
