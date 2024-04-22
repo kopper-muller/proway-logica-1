@@ -1,0 +1,21 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 22/04/2024
+// Seção de Declarações 
+var
+numero1, numero2, soma: inteiro
+              //(<parametros (info previas)>)      (<tipo do retorno>)
+funcao somar (numero1: inteiro; numero2: inteiro): inteiro
+var
+resultado: inteiro
+inicio
+resultado:=numero1+numero2
+retorne resultado
+fimfuncao
+
+inicio
+soma := somar(4,9)
+escreval ("soma: ", soma)
+
+fimalgoritmo
