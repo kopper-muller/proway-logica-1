@@ -1,0 +1,71 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 22/04/2024
+// Seção de Declarações
+var
+lado1, lado2, lado3: inteiro
+
+procedimento solicitarCatetos()
+var
+i: inteiro
+inicio
+escreva("digite o cateto 1: ")
+leia (lado1)
+escreva("digite o cateto 2: ")
+leia (lado2)
+escreva("digite o cateto 3: ")
+leia (lado3)
+fimprocedimento
+
+funcao verificarEquilatero(): logico
+inicio
+se ((lado1=lado2) e (lado2=lado3)) entao
+   retorne verdadeiro
+senao
+   retorne falso
+fimse
+fimfuncao
+
+funcao verificarEscaleno(): logico
+inicio
+se ((lado1<>lado2) e (lado2<>lado3)) entao
+   retorne verdadeiro
+senao
+   retorne falso
+fimse
+fimfuncao
+
+funcao verificarIsoceles(): logico
+inicio
+se ((((lado1=lado2) e (lado2<>lado3)) ou ((lado1=lado3) e (lado3<>lado2))) ou ((lado3=lado2) e (lado2<>lado1))) entao
+   retorne verdadeiro
+senao
+   retorne falso
+fimse
+fimfuncao
+
+funcao obterTipoTriangulo(): caracter
+var
+tipo: caracter
+inicio
+se verificarIsoceles()=verdadeiro entao
+   tipo:= "isóceles"
+senao
+   se verificarEquilatero()=verdadeiro entao
+      tipo:= "equilátero"
+   senao
+      tipo:= "escaleno"
+   fimse
+fimse
+retorne tipo
+fimfuncao
+
+inicio
+solicitarCatetos()
+
+escreval ("este triângulo é ", obterTipoTriangulo())
+
+
+
+fimalgoritmo
