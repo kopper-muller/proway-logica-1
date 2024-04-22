@@ -1,0 +1,52 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 22/04/2024
+// Seção de Declarações
+var
+nome: caracter
+peso, altura, imc: real
+//solicitar nome altura e peso, e calcular o IMC
+procedimento solicitarInformacoes ()
+inicio
+escreva ("digite o nome: ")
+leia (nome)
+escreva ("digite o peso: ")
+leia (peso)
+escreva ("digite a altura: ")
+leia (altura)
+fimprocedimento
+
+funcao calcularImc(): real
+var
+resultado: real
+inicio
+resultado:= (peso/altura)/altura
+retorne resultado
+fimfuncao
+
+
+funcao obterStatus(): caracter
+var
+status: caracter
+inicio
+se imc < 18.5 entao
+   status := "Abaixo do Peso"
+senao
+   se imc<30 entao
+      status:= "peso normal"
+   senao
+      status := "obesidade"
+   fimse
+fimse
+retorne status
+fimfuncao
+
+
+
+inicio
+solicitarInformacoes()
+imc:= calcularimc
+escreval ("IMC: ", imc)
+escreval ("status: ", obterStatus())
+fimalgoritmo
