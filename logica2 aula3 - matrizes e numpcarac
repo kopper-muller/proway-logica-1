@@ -1,0 +1,21 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 23/04/2024
+// Seção de Declarações 
+var
+jogos: vetor[0..2, 0..1] de caracter
+total: real
+inicio
+jogos[0,0]: "cod"
+jogos[0,1]: "300.00"
+
+jogos[1,0]: "pokemon"
+jogos[1,1]: "200.00"
+
+jogos[2,0]:  "LOL"
+jogos[2,1]: "0"
+
+total:= caracpnum(jogos[0,1])+ caracpnum(jogos[1,1])+ caracpnum(jogos[2,1])
+
+fimalgoritmo
