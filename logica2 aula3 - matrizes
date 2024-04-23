@@ -1,0 +1,19 @@
+// Data : 23/04/2024
+// Seção de Declarações
+var
+nomes: vetor [0..1, 0..2] de caracter
+i: inteiro
+inicio
+nomes[0,0]:= "be"
+nomes[0,2]:="jô"
+nomes[0,1]:="nico"
+nomes[1,0]:="dudu"
+nomes[1,1]:="carol"
+nomes[1,2]:="fran"
+para i de 0 ate 2 faca
+   escreva(nomes[0,i], ", ")
+fimpara
+para i de 0 ate 2 faca
+   escreva(nomes[1,i], ", ")
+fimpara
+fimalgoritmo
