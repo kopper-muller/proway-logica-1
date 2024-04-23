@@ -1,0 +1,27 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 23/04/2024
+// Seção de Declarações
+var
+numeros: vetor [0..1, 0..1] de inteiro//2 linhas por 2 linhas
+soma, i, j: inteiro
+inicio
+numeros[0,0]:=30
+numeros[0,1]:=31
+numeros[1,0]:=40
+numeros[1,1]:=42
+
+para i de 0 ate 1 faca
+   para j de 0 ate 1 faca
+      soma:= soma+numeros[i,j]
+   fimpara
+fimpara
+escreval ("soma: ", soma)
+
+para i de 0 ate 1 faca
+   para j de 0 ate 1 faca
+   escreva (numeros[i,j])
+   fimpara
+   escreval
+fimpara
