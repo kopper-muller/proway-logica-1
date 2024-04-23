@@ -1,0 +1,56 @@
+// Função :
+// Autor :
+// Data : 22/04/2024
+// Seção de Declarações
+var
+nota: vetor[0..2] de real
+presenca: real
+status2: caracter
+obterMedia: real
+procedimento pedirNotaPresenca()
+var
+i: inteiro
+inicio
+para i de 0 ate 2 faca
+   escreva("qual sua nota", i+1, ": ")
+   leia(nota[i])
+fimpara
+escreva ("digite sua presença: ")
+leia(presenca)
+fimprocedimento
+
+funcao fazerMedia(): real
+var
+somanota: real
+media: real
+inicio
+somanota := ((nota[0]+nota[1])+nota[2])
+media:=somanota/3
+retorne media
+fimfuncao
+
+funcao verificarAprovado(media: real): caracter
+
+var
+status: caracter
+
+inicio
+se (media<7) ou (presenca<75) entao
+   status:="reprovado"
+senao
+   status:= "aprovado"
+fimse
+retorne status
+fimfuncao
+
+
+
+inicio
+pedirNotaPresenca()
+obterMedia:=fazerMedia()
+status2:=verificarAprovado(obterMedia)
+se status2="reprovado" entao
+   escreval ("você está reprovado com ", presenca, "% de presença e ", obterMedia, "de media")
+senao
+   escreval ("você está aprovado com ", presenca, "% de presença e ", obterMedia, " de media")
+fimse
