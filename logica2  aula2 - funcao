@@ -1,0 +1,88 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 22/04/2024
+// Seção de Declarações
+var
+numero: vetor[0..4] de inteiro
+
+procedimento pedirNumeros()
+var
+i: inteiro
+
+inicio
+para i de 0 ate 4 faca
+   escreva ("digite o numero ", i+1, ": ")
+   leia (numero[i])
+fimpara
+limpatela
+fimprocedimento
+
+funcao somarNumeros(): inteiro
+var
+i: inteiro
+somaNumero: inteiro
+inicio
+para i de 0 ate 4 faca
+   somaNumero := somaNumero+numero[i]
+fimpara
+retorne somaNumero
+fimfuncao
+
+funcao acharMaiorNumero(): inteiro
+var
+maiorNumero: inteiro
+i: inteiro
+inicio
+para i de 0 ate 4 faca
+   se maiorNumero<numero[i] entao
+      maiorNumero:=numero[i]
+   fimse
+fimpara
+retorne maiorNumero
+fimfuncao
+
+
+funcao acharMenorNumero(): inteiro
+var
+i:inteiro
+menorNumero:inteiro
+inicio
+menorNumero:= 99999999
+para i de 0 ate 4 faca
+
+   se menorNumero>numero[i] entao
+      menorNumero:=numero[i]
+   fimse
+fimpara
+retorne menorNumero
+fimfuncao
+
+funcao acharPares(): inteiro
+var
+par: logico
+i: inteiro
+totalPar: inteiro
+inicio
+para i de 0 ate 4 faca
+   se numero[i]%2<>0 entao
+      par := falso
+   senao
+      par := verdadeiro
+   fimse
+   se par=verdadeiro entao
+      totalPar:=totalPar+1
+   fimse
+fimpara
+retorne totalPar
+fimfuncao
+
+
+
+inicio
+pedirNumeros()
+escreval("os números somados formam: ", somarNumeros())
+escreval("o maior número é: ", acharMaiorNumero())
+escreval("o menor número é: ", acharMenorNumero())
+escreval("há no total ", acharPares(), " números pares")
+fimalgoritmo
