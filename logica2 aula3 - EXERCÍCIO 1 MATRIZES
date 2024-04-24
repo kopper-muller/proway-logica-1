@@ -1,0 +1,25 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 24/04/2024
+// Seção de Declarações 
+var
+nome: vetor[0..1, 0..2] de caracter
+inicio
+escreva ("digite o nome do curso 1: ")
+leia(nome[0,0])
+escreva ("digite o nome do curso 2: ")
+leia(nome[0,1])
+escreva ("digite o nome do curso 3: ")
+leia(nome[0,2])
+escreva ("digite o nome do curso 4: ")
+leia(nome[1,0])
+escreva ("digite o nome do curso 5: ")
+leia(nome[1,1])
+escreva ("digite o nome do curso 6: ")
+leia(nome[1,2])
+
+
+escreval (nome[0,0], " ", nome[0,1], " ", nome[0,2])
+escreval (nome[1,0], " ", nome[1,1], " ", nome[1,2])
+fimalgoritmo
