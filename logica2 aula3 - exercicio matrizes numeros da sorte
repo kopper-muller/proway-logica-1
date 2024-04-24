@@ -1,0 +1,113 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 24/04/2024
+// Seção de Declarações
+var
+numeros: vetor [0..3, 0..3] de inteiro
+i,j: inteiro
+
+procedimento solicitarNumeros()
+inicio
+para i de 0 ate 3 faca
+   para j de 0 ate 3 faca
+      escreva("digite seu número da sorte: ")
+      leia(numeros[i,j])
+   fimpara
+fimpara
+fimprocedimento
+
+
+funcao somarNumeros(): inteiro
+var
+soma: inteiro
+inicio
+para i de 0 ate 3 faca
+   para j de 0 ate 3 faca
+      soma:= soma + numeros[i,j]
+   fimpara
+fimpara
+retorne soma
+fimfuncao
+
+
+funcao fazerMedia(soma: inteiro): real
+var
+media:  real
+inicio
+media:= soma/(16)
+retorne media
+fimfuncao
+
+
+funcao soma2Linha(): inteiro
+var
+somarLinha2: inteiro
+inicio
+para j de 0 ate 3 faca
+   somarlinha2:= somarlinha2 + numeros[1,j]
+fimpara
+retorne somarlinha2
+fimfuncao
+
+
+
+funcao soma1coluna(): inteiro
+var
+somarColuna1
+inicio
+para i de 0 ate 3 faca
+   somarColuna1:= somarColuna1 + numeros[i,0]
+fimpara
+retorne somarColuna1
+fimfuncao
+
+
+funcao somaDiagonalPrincipal(): inteiro
+var
+somarDiagonalP: inteiro
+inicio
+para i de 0 ate 3 faca
+   para j de 0 ate 3 faca
+      se i=j entao
+      somarDiagonalP:= somarDiagonalP + numeros[i,j]
+      fimse
+   fimpara
+fimpara
+retorne somarDiagonalP
+fimfuncao
+
+
+funcao somaDiagonalSecundaria(): inteiro
+var
+somarDiagonalS: inteiro
+inicio
+para i de 0 ate 3 faca
+   para j de 0 ate 3 faca
+      se i+j=3 entao
+      somaDiagonalS: somaDiagonalS + numeros[i,j]
+      fimse
+   fimpara
+fimpara
+retorne somarDiagonalS
+fimfuncao
+
+
+inicio
+
+solicitarNumeros()
+para i de 0 ate 3 faca
+   para j de 0 ate 3 faca
+      escreva (numeros[i,j], " ")
+   fimpara
+   escreval
+fimpara
+
+escreval ("a soma deles é: ", somarNumeros())
+escreval ("a média deles é: ", fazerMedia(soma: inteiro))
+escreval ("a soma da 2a linha é: ", soma2Linha())
+escreval ("a soma da 1a coluna é: ", soma1coluna())
+escreval ("a soma da diagonal principal é: ", somaDiagonalPrincipal())
+escreval ("a soma da diagonal secundária é: ", somaDiagonalSecundaria())
+
+fimalgoritmo
