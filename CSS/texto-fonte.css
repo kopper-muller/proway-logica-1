@@ -1,0 +1,24 @@
+.botao{ 
+    text-decoration: none;
+    background-color: yellow; 
+    width: 100px; 
+    height: 30px;  
+    text-align: center;
+    display: inline-block;
+    outline-color:white;
+    outline-style:outset;
+    color: black;
+    /* width é usado para definir a largura do elemento e height a altura */
+}
+
+.botao:hover{ 
+    background-color: darkgoldenrod;
+    outline-color: black ;
+    color: white
+    /* hover serve para alterar o layout por conta do evento do mouse passar por cima */
+}
+
+.negrito{
+
+    font-weight: bold;
+}

@@ -1,0 +1,17 @@
+body{
+    background-color: darkblue; 
+}
+
+h2{ 
+    color: lightgreen;
+}
+
+span{
+    color: purple;
+    font-weight: bold;
+}
+
+p{ 
+    background-color: red;
+    font-size: 30px;
+}
